@@ -1,0 +1,125 @@
+@import "//netdna.bootstrapcdn.com/font-awesome/3.0/css/font-awesome.css";
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+html,body{
+    background-color: rgba(41, 133, 209, 0.662);
+    height: 100%;
+    width:100%;
+    display: flex;
+    flex-direction: row;
+    align-items:center;
+    justify-content: center;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+    border:2px solid rgb(255, 255, 255);
+    
+    width: 90%;
+    height: auto;
+    border-radius: 2%;
+
+    
+}
+#line{
+    border-color: rgba(0, 0, 0, 0.205);
+    border-width: 1px;
+    margin: 0;
+    
+}
+#title{
+    padding:20px;
+    align-self: center;
+    font-size: 1.3rem;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    
+}
+form{
+    margin:10px;
+}
+
+input,textarea{
+    margin:7px;
+    padding: 7px;
+    width: 95%;
+    border: 1px solid rgba(190, 185, 185, 0.598);
+    border-radius: 2px;
+    
+}
+#submit{
+    margin:7px;
+    padding:4px;
+    background-color: rgba(21, 93, 152, 0.662) ;
+    border:none;
+    border-radius: 2px;
+    width: auto;
+    font-variant:unset;
+}
+input[type="number"]::-webkit-inner-spin-button,
+input[type="number"]::-webkit-outer-spin-button {
+    -webkit-appearance: none; /* Hide spin buttons */
+    appearance: none; /* Hide spin buttons for Firefox */
+}
+input::placeholder,textarea::placeholder{
+    color:rgba(190, 185, 185, 0.845);
+    font-family: FontAwesome;
+    letter-spacing: 2px;
+    font-size: 0.8rem;
+    font-variant: small-caps;
+}
+#message{
+    max-width:95% ;
+    
+}
+.error-message{
+    color:red;
+}
+@media  (min-width:576px){
+    input,textarea{
+        width: auto;
+        
+        
+    }
+    #message{
+        min-width: 95%;
+    }
+    .field{
+        width:50%
+    }
+    .end>.field{
+        width:auto;
+    }
+    input{
+       width: 90%;
+    }
+    form{
+        display: flex;
+        flex-direction: column;
+    }
+    .rowone{
+       
+        display: flex;
+    }
+    .rowtwo{
+        
+        display: flex;
+    }
+    .end{
+        
+        display: flex;
+        flex-direction: column;
+    }
+    #submit,#message{
+        
+        align-self: flex-start;
+    }
+    
+    .container{
+        width:auto
+    }
+}
